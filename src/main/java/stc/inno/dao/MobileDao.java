@@ -4,6 +4,7 @@ package stc.inno.dao;
 import stc.inno.pojo.Mobile;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public interface MobileDao {
   Long addMobile(Mobile mobile);
@@ -15,5 +16,7 @@ public interface MobileDao {
   boolean deleteMobileById(Long id);
 
   void renewDatabase() throws SQLException;
+
+  List<Mobile> getAllMobile();
 }
 
